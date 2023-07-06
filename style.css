@@ -1,0 +1,191 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 200vh;
+}
+ul, button, a{
+    font-weight:500;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    color: lightgray;
+}
+a:hover{
+    border-bottom: 2px solid lightgray;
+}
+li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+}
+nav{
+    background-color:#415b80;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    left:0;
+    top:0;
+    right: 0;
+}
+.logo{
+    width: 20vh;
+    cursor:pointer;
+    margin-left: 10px;
+}
+ul{
+    display:flex;
+}
+.empty{
+    width: 20vh;
+}
+.main1-container{
+    height: 100vh;
+    background-color: #526D82;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+}
+.tartalom{
+    text-align: center;
+    width: 70%;
+    font-family: 'Space Grotesk', sans-serif;
+    color: lightgray;
+}
+.koszones{
+    margin-bottom: 15px;
+    font-size: 3rem;
+    color: lightgray;
+}
+.bemutatkozas{
+    font-size: 1.4rem;
+}
+.portfolio{
+    height: 300px;
+    width: 300px;
+    object-fit:cover;
+   border-radius: 10px;
+}
+.baloldal1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jobboldal1{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main2-container{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color:#474E68;
+    color: white;
+    height: 190vh;
+}
+.cimsor{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.szazalek-kep{
+    width: 30%;
+    
+}
+.main2-container-grid{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 40%;
+    row-gap: 10vh;
+    margin-top: 10vh;
+    row-gap: 130px;
+}
+.nyelvek{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 4fr 1fr 1fr;
+    row-gap: 20px;
+}
+.ikonok{
+    height:200px;
+}
+.skillnev, .szazalek , .kepkeret{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+}
+.skillnev{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.lablec{
+    height: 20vh;
+    background-color:#526D82;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.lablec-logo{
+    width: 35px;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.lablec-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:680px) {
+    nav{
+        flex-direction: column;
+        text-align: center;
+        position:unset;
+    }
+    ul{
+        flex-direction: column;
+        gap: 15px;   
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .main1-container{
+        grid-template-columns: 100%;
+        grid-template-rows: 50vh 50vh;
+        padding-top: 20px;
+    }
+    .jobboldal1{
+        justify-content: center;
+    }
+    .bemutatkozas{
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+    .main2-container{
+        height:300vh;
+    }
+    .main2-container-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 80px;
+    }
+    .skillnev{
+        margin: 0;
+        padding: 0;
+    }
+    .nyelvek{
+        row-gap:0;
+    }
+    .lablec{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        height: 40vh;
+    }
+}
